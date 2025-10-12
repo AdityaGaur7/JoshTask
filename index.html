@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta favicon href="favicon.ico">
+    <title>Rayan Adlrdard - Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="public\images\Logo.svg" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="circle-decoration circle-yellow"></div>
+            <div class="circle-decoration circle-yellow2"></div>
+            <div class="circle-decoration circle-green"></div>
+
+
+            <h1>I'm Rayan Adlrdard <br /><span class="highlight"> Front-end Developer</span></h1>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et, Volutpat Feugiat Placerat Lobortis.
+                Natoque
+                Rutrum Semper Sed Suspendisse Nunc Lectus.</p>
+            <button class="cta-button hire-btn" onclick="openModal()">HIRE ME <img src="public/icons/arrow.svg"
+                    alt=""></button>
+
+        </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <div class="square-decoration-yellow"></div>
+                <div class="square-decoration-blue"></div>
+                <div class="circle-decoration circle-orange"></div>
+                <div class="hero-image">
+                    <img src="public\images\hero-img.svg" alt="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit
+            Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+        <div class="projects-grid">
+
+        </div>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+        <h2 class="section-title">Recommendations</h2>
+        <p class="section-subtitle">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit
+            Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+
+        <div class="carousel-container">
+            <button class="carousel-nav prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-nav next" onclick="moveCarousel(1)">&#10095;</button>
+
+            <div class="carousel-track">
+                <div class="recommendation-card">
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Great Quality!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23ccc'/%3E%3C/svg%3E"
+                                alt="James Gouse" class="author-image">
+                            <div class="author-info">
+                                <h5>James Gouse</h5>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Amazing Work!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23bbb'/%3E%3C/svg%3E"
+                                alt="Tiana Philips" class="author-image">
+                            <div class="author-info">
+                                <h5>Tiana Philips</h5>
+                                <p>Photographer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Great Quality!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23aaa'/%3E%3C/svg%3E"
+                                alt="Talan Westervelt" class="author-image">
+                            <div class="author-info">
+                                <h5>Talan Westervelt</h5>
+                                <p>Business Man</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Great Quality!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23999'/%3E%3C/svg%3E"
+                                alt="Author 4" class="author-image">
+                            <div class="author-info">
+                                <h5>John Smith</h5>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="recommendation-card">
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Excellent Service!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23888'/%3E%3C/svg%3E"
+                                alt="Author 5" class="author-image">
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Outstanding Work!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23777'/%3E%3C/svg%3E"
+                                alt="Author 6" class="author-image">
+                            <div class="author-info">
+                                <h5>Michael Brown</h5>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Professional!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23666'/%3E%3C/svg%3E"
+                                alt="Author 7" class="author-image">
+                            <div class="author-info">
+                                <h5>Emily Davis</h5>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <h4>Highly Recommended!</h4>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+                            Viverra Morbi. Morbi Donec Amet....</p>
+                        <div class="author">
+                            <img src="data:image/svg+xml,%3Csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23555'/%3E%3C/svg%3E"
+                                alt="Author 8" class="author-image">
+                            <div class="author-info">
+                                <h5>David Wilson</h5>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="form-container">
+            <h2>Leave ME Your Info</h2>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Full Name ( Required )" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email ( Required )" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="cta-button">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="contact-info-container">
+            <h2>Contact Information</h2>
+
+            <div class="info-section">
+                <div class="info-icon">📍</div>
+                <div class="info-item">
+                    <span class="info-label">Country:</span>
+                    <span class="info-value">Bangladesh</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">City:</span>
+                    <span class="info-value">Dhaka</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Street:</span>
+                    <span class="info-value">35 Vhatara, Badda</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-icon">✉️</div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">youremail@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Skype:</span>
+                    <span class="info-value">@yourusername</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Telegram:</span>
+                    <span class="info-value">@yourusername</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-icon">📱</div>
+                <div class="info-item">
+                    <span class="info-label">Support Services:</span>
+                    <span class="info-value">15369</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Office:</span>
+                    <span class="info-value">+58 (021)356 587 235</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Personal:</span>
+                    <span class="info-value">+58 (021)356 587 235</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number">3</div>
+            <div class="stat-label">YEARS EXPERIENCE</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">💼</div>
+            <div class="stat-number">60+</div>
+            <div class="stat-label">PROJECTS</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">😊</div>
+            <div class="stat-number">8</div>
+            <div class="stat-label">HAPPY CLIENTS</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">🎖️</div>
+            <div class="stat-number">5</div>
+            <div class="stat-label">AWARDS</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="public\images\Logo.svg" alt="logo">
+                </div>
+                <div class="social-link">
+                    <span>📧</span>
+                    <span>examplemail@mail.com</span>
+                </div>
+                <div class="social-link">
+                    <span>📱</span>
+                    <span>+0123 456 789</span>
+                </div>
+                <div class="social-link">
+                    <span>🌐</span>
+                    <span>www.example.com</span>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Portfolio</h3>
+                <ul>
+                    <li><a href="#projects">Frontend Development</a></li>
+                    <li><a href="#projects">Backend Development</a></li>
+                    <li><a href="#projects">Website Design</a></li>
+                    <li><a href="#projects">Machine Learning</a></li>
+                    <li><a href="#projects">Problem Solving & DSA</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <span>🔗</span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <span>📸</span>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <span>📘</span>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Copyright. All right reserved</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="hireModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2>Hire Me</h2>
+            <p style="margin: 20px 0; color: #666;">Fill out the form below and I'll get back to you as soon as
+                possible.</p>
+            <form onsubmit="handleModalSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Project Budget">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Project Details" rows="5"></textarea>
+                </div>
+                <button type="submit" class="cta-button">SUBMIT REQUEST</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ProjectData.js"></script>
+
+</body>
+
+</html>
