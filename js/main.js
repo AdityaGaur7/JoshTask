@@ -1,6 +1,6 @@
 
         let currentSlide = 0;
-        const totalSlides = 2;
+        const totalSlides = 5;
         let autoplayInterval;
 
         function moveCarousel(direction) {
@@ -23,7 +23,7 @@
         }
 
         function updateCarousel() {
-            const track = document.querySelector('.carousel-track');
+            const track = document.querySelector('.carousel-tracko');
             const dots = document.querySelectorAll('.dot');
             
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -134,3 +134,5 @@
             });
         });
     
+
+        
