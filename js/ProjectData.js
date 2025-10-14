@@ -48,13 +48,13 @@ const projectsGrid = document.querySelector('.projects-grid');
 
 // Use map() to create an array of HTML strings, one for each project
 const projectsHTML = projectsData.map(project => {
-    // Generate the HTML for the tags
-    const tagsHTML = project.tags.map(tag => 
-        `<span class="tag">${tag}</span>`
-    ).join(''); // Join the tag HTML strings together
+  // Generate the HTML for the tags
+  const tagsHTML = project.tags.map(tag =>
+    `<span class="tag">${tag}</span>`
+  ).join(''); // Join the tag HTML strings together
 
-    // Generate the full HTML for the project card
-    return `
+  // Generate the full HTML for the project card
+  return `
         <article class="project-card">
             <img src="${project.imageSrc}"
                 alt="${project.imageAlt}" class="project-image">
@@ -71,6 +71,54 @@ const projectsHTML = projectsData.map(project => {
 
 // Insert the generated HTML into the DOM
 if (projectsGrid) {
-    projectsGrid.innerHTML = projectsHTML;
+  projectsGrid.innerHTML = projectsHTML;
 }
+
+// Testimonials data
+const testimonialsData = [
+  {
+    rating: 5,
+    title: "Great Quality!",
+    text: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....",
+    authorName: "James Gouse",
+    authorRole: "Graphic Designer",
+    authorImage: "public/images/author1.png"
+  },
+  {
+    rating: 5,
+    title: "Amazing Work!",
+    text: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....",
+    authorName: "Tiana Philips",
+    authorRole: "Photographer",
+    authorImage: "public/images/author2.png"
+  },
+  {
+    rating: 5,
+    title: "Great Quality!",
+    text: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....",
+    authorName: "Talan Westervelt",
+    authorRole: "Business Man",
+    authorImage: "public/images/author3.png"
+  },
+  {
+    rating: 5,
+    title: "Great Quality!",
+    text: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....",
+    authorName: "John Smith",
+    authorRole: "Developer",
+    authorImage: "public/images/author1.png"
+  },
+  {
+    rating: 5,
+    title: "Great Quality!",
+    text: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet....",
+    authorName: "James Gouse",
+    authorRole: "Graphic Designer",
+    authorImage: "public/images/author1.png"
+  },
+ 
+];
+
+// expose for carousel builder
+window.testimonialsData = testimonialsData;
 
