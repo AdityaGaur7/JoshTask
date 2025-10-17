@@ -11,6 +11,8 @@ body {
     overflow-x: hidden;
 }
 
+/* ---------------header style ------------ */
+
 header {
     width: Fixed(1, 440px);
     height: Fixed(152px);
@@ -67,6 +69,7 @@ nav a {
     gap: 10px;
 
 
+
 }
 
 nav a:hover {
@@ -81,11 +84,12 @@ nav a.active {
     border-radius: 5px;
 }
 
+/* --------------hero section style-------------- */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 80px 40px;
+    padding: 80px 80px 0px;
     background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
     position: relative;
     min-height: 600px;
@@ -105,6 +109,7 @@ nav a.active {
     font-weight: 700;
     margin-bottom: 20px;
     color: #2d2d2d;
+    width: 74%;
 }
 
 .hero-content .highlight {
@@ -130,7 +135,7 @@ nav a.active {
     color: #000;
     border: none;
     border-radius: 4px;
-    font-weight: 700;
+    font-weight: 500;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -280,7 +285,7 @@ section {
     text-align: center;
     font-size: 15px;
     color: #666;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     /* max-width: 721px; */
     width: 540px;
     margin-left: auto;
@@ -289,6 +294,8 @@ section {
     position: relative;
     top: -13px;
 }
+
+/* ------------project section  style ----------------- */
 
 .projects-grid {
     display: grid;
@@ -299,7 +306,7 @@ section {
 }
 
 #projects {
-    margin-top: -12px;
+    margin-top: 31px;
 }
 
 .project-card {
@@ -316,6 +323,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -360,6 +368,8 @@ section {
 }
 
 
+/* ---------------Recommendation section style ----------------- */
+
 
 .recommendations {
     margin-top: -27px;
@@ -387,8 +397,8 @@ section {
 
 /* each testimonial slide width adapts to visible count via JS translate step */
 .testimonial-slide {
-    min-width: calc(100% / 4);
-    margin: 0px 26px;
+    min-width: calc(105% / 4);
+    margin: 0px 15px;
 }
 
 .testimonial {
@@ -397,14 +407,18 @@ section {
     border-radius: 8px;
     width: 100%;
     height: 345px;
-    border: 1px solid red;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .stars {
     color: #ffc107;
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 31px;
+    margin-bottom: 43px;
+}
+.stars img{
+    width: auto;
+    height: 23px;
+
 }
 
 .testimonial h4 {
@@ -452,8 +466,7 @@ section {
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
-    position: relative;
-    top: 20px;
+
 
 }
 
@@ -500,6 +513,9 @@ section {
     right: 1px;
 }
 
+/* ------------------------- Contact Section style ---------------- */
+
+
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -507,6 +523,7 @@ section {
     top: 2536.33px;
     padding-right: 98px;
     padding-left: 98px;
+    margin-top: 10px;
 
 }
 
@@ -566,16 +583,17 @@ form {
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    border: 1px solid #e0e0e0;
+    border: none;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     background: #F0F0F6;
 
+
 }
 
 .form-group label {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     text-transform: capitalize;
     color: #767676;
@@ -584,7 +602,7 @@ form {
 
 .form-group textarea {
     min-height: 225px;
-    resize: vertical;
+    resize: none;
 }
 
 .form-cta-button {
@@ -596,8 +614,9 @@ form {
     padding-bottom: 17px;
     padding-left: 16px;
     gap: 10px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 5px;
+    border: 1px solid #FFB400;
     background: #FFB400;
     position: relative;
     top: 167px;
@@ -703,6 +722,9 @@ form {
     letter-spacing: 1px;
 }
 
+
+/* ----------------- Footer Section Style -------------- */
+
 footer {
     color: #fff;
     padding: 60px 80px 30px;
@@ -750,6 +772,11 @@ footer {
 
 }
 
+.footer-connect h3 {
+    position: relative;
+    left: 20px;
+}
+
 
 .footer-section h3 {
     font-size: 18px;
@@ -766,12 +793,11 @@ footer {
 }
 
 .footer-section a {
-    color: #ccc;
+    color: #000000;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
-    font-family: Inter;
-    font-weight: 400;
+    
     font-style: Regular;
     font-size: 16px;
     leading-trim: NONE;
@@ -806,11 +832,14 @@ footer {
 
 }
 
+
 .footer-links {
     display: flex;
     gap: 170px;
     margin-top: 28px;
 }
+
+
 
 .footer-logo {
     position: relative;
@@ -838,7 +867,7 @@ footer {
 }
 
 .footer-bottom p {
-    font-family: Inter;
+   
     font-weight: 400;
     font-size: 15px;
     leading-trim: NONE;
@@ -848,48 +877,14 @@ footer {
 
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 2000;
-    align-items: center;
+.footer-section .footer-link {
+    height: 291px;
+    gap: 18px;
     justify-content: center;
+
 }
 
-.modal.active {
-    display: flex;
-}
-
-.modal-content {
-    background: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    max-width: 600px;
-    width: 90%;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: #666;
-}
-
-.modal-close:hover {
-    color: #000;
-}
+/* ---------------- Responsive Design Style ------------------- */
 
 @media (max-width: 1200px) {
     .projects-grid {
@@ -903,6 +898,13 @@ footer {
     .testimonial-slide {
         min-width: calc(100% / 2);
     }
+    .square-decoration-yellow,
+    .square-decoration-blue,
+    .triangle img,
+    .circle-decoration {
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -954,5 +956,292 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        padding: 24px 48px;
+    }
+
+    section {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .hero-content {
+        top: 0;
+        left: 0;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        width: auto;
+        height: auto;
+        gap: 16px;
+        left: 0;
+        top: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-title,
+    .section-title-recommendation {
+        font-size: 30px;
+    }
+
+    .recommendation-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 24px;
+    }
+
+    section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .logo img {
+        width: 140px;
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        top: 0;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .hire-btn {
+        top: 20px;
+        left: 0;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-width: 100%;
+        left: 0;
+    }
+
+    .square-decoration-yellow,
+    .square-decoration-blue,
+    .triangle img,
+    .circle-decoration {
+        display: none;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+    }
+
+    .project-image {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .testimonial {
+        height: auto;
+    }
+
+    .carousel-nav.prev {
+        left: 8px;
+    }
+
+    .carousel-nav.next {
+        right: 8px;
+    }
+
+    .contact-section {
+        gap: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .form-container,
+    form,
+    .form-group,
+    .contact-info-container,
+    .info-section {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .form-cta-button {
+        top: 0;
+        left: 0;
+    }
+
+    .contact-info-container {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .stats {
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .footer-mid {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .footer-links {
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        width: auto;
+        height: auto;
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        gap: 12px;
+    }
+
+    .section-title,
+    .section-title-recommendation {
+        font-size: 26px;
+    }
+
+    .section-subtitle,
+    .section-subtitle-recommendation {
+        width: auto;
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .carousel-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 240px;
+    }
+}
+
+/* ----------------- Mobile Menu Style ------------------- */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #2d2d2d;
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: sticky;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    header {
+        display: flex;
+        gap: 12px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+        border-top: 1px solid #eee;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        z-index: 1001;
+    }
+
+    header nav.open {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 24px;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px 6px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,4 +1,4 @@
-
+// --------------------Testimonials Carousel--------------------
 let currentSlide = 0;
 let totalSlides = 0;
 let autoplayInterval;
@@ -14,8 +14,8 @@ function moveCarousel(direction) {
         currentSlide = 0;
     }
 
-    // updateCarousel();
-    // resetAutoplay();
+    updateCarousel();
+    resetAutoplay();
 }
 
 function goToSlide(index) {
@@ -60,15 +60,6 @@ function resetAutoplay() {
     startAutoplay();
 }
 
-function openModal() {
-    document.getElementById('hireModal').classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-    document.getElementById('hireModal').classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -76,12 +67,6 @@ function handleSubmit(event) {
     event.target.reset();
 }
 
-function handleModalSubmit(event) {
-    event.preventDefault();
-    alert('Thank you for your inquiry! I will review your request and contact you shortly.');
-    closeModal();
-    event.target.reset();
-}
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
@@ -93,12 +78,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-window.addEventListener('click', (e) => {
-    const modal = document.getElementById('hireModal');
-    if (e.target === modal) {
-        closeModal();
-    }
-});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
@@ -112,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slidesHTML = window.testimonialsData.map(t => `
                 <div class="testimonial-slide">
                     <article class="testimonial">
-                        <div class="stars">${'★'.repeat(t.rating)}</div>
+                        <div class="stars">${'<img src="public/icons/Star.svg" alt="Star">'.repeat(t.rating)}</div>
                         <h4>${t.title}</h4>
                         <p>${t.text}</p>
                         <div class="author">
@@ -134,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('');
     dotsContainer.innerHTML = dotsHTML;
 
-    // initialize
+
     currentSlide = 0;
     updateCarousel();
     startAutoplay();
@@ -186,5 +166,38 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
+
+// ---------------- Mobile nav toggle (hamburger)----------------
+const menuToggleButton = document.querySelector('.menu-toggle');
+const primaryNav = document.getElementById('primary-nav');
+
+if (menuToggleButton && primaryNav) {
+    menuToggleButton.addEventListener('click', () => {
+        const isOpen = primaryNav.classList.toggle('open');
+        menuToggleButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    primaryNav.addEventListener('click', (e) => {
+        const target = e.target;
+        if (target && target.tagName === 'A' && primaryNav.classList.contains('open')) {
+            primaryNav.classList.remove('open');
+            menuToggleButton.setAttribute('aria-expanded', 'false');
+        }
+    }, true);
+
+    document.addEventListener('click', (e) => {
+        if (!primaryNav.contains(e.target) && e.target !== menuToggleButton && primaryNav.classList.contains('open')) {
+            primaryNav.classList.remove('open');
+            menuToggleButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && primaryNav.classList.contains('open')) {
+            primaryNav.classList.remove('open');
+            menuToggleButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
 
 
